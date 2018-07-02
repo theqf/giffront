@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GIF流水字生成网站</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body style="text-align:center;">
+<div class="indexgif" id="indexgif">
+	<img src="./images/index.gif"> </img>
+</div>
+<div class="zySearch" id="zySearch"></div>
+<div class="imgshow" id="imgshow"></div>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/zySearch.js"></script>
+
+<script type="text/javascript">
+$("#zySearch").zySearch({
+	"width":"355",
+	"height":"33",
+	"parentClass":"pageTitle",
+	"callback":function(keyword){
+		console.info("输入要生成的文字");
+		console.info(keyword);
+	}
+});
+</script>
+<div style="text-align:center;margin:150px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>生成类似首页上方的GIF动态文字图片</p>
+</div>
+</body>
+</html>
